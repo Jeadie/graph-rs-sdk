@@ -121,6 +121,11 @@ impl DrivesIdApiClient {
         path: "/drives/{{RID}}/root"
     );
     get!(
+        doc: "Get drive items at the root of the drive",
+        name: get_root_children,
+        path: "/drives/{{RID}}/root/children",
+    );
+    get!(
         doc: "Get content for the navigation property root from drives",
         name: get_root_content,
         path: "/drives/{{RID}}/root/content"
